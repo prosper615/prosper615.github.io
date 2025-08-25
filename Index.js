@@ -2,8 +2,8 @@
 
 
 const posts = [
-  { title: "", file: "Log1.html" },
-  { title: "", file: "Log2.html" }
+  { title: "Learning as i go ( notes from my 1 month of research)", file: "Log1.html" },
+  { title: "The spark", file: "Log2.html" }
 ];
 
 const postList = document.getElementById("post-list");
