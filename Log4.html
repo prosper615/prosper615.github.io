@@ -1,0 +1,278 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js" defer></script>
+    <title>Log4</title>
+
+</head>
+
+  LOGGING IT OUT RAW (4) ❤️ <br>
+    <p> 01/10/2025</p>
+
+    <i> NB:I will walk through the ideas in simple terms and bring in math notation only when it's unavoidable / adds value</i>
+
+
+    <h1>This kind of numbers : From primes to protocols</h1>
+
+    For me primes are one of the most intresting numbers. Though has a pattern but unpredictable. 
+
+    Mathematians over the years have tried to investigate it's properties and structure .
+
+Many cryptographic primitives leverage on it's uniqueness e.g factorization of semiprimes and discrete log over primes <br>
+
+<h1> What are primes </h1> <br>
+
+Prime numbers are numbers that cannot be divided by any other number except one and it's self <br>
+NB: prime numbers are odd, obviously even numbers are seived out of this except 2. All numbers 
+apart from primes are ( or can be ) categorized as composite numbers
+<br>
+
+<h2> My journey to study primes </h2> <br>
+
+<b> Firstly </b>: with novelty i sought patterns and characteristics on primes( personal experiments).
+I was pondering on " large semiprimes are hard to factor" <br>
+My main aim was to see gaps in primes and range of primes with a particular gap but big failure! and question followed
+why don't research about studies on primes?  <br>
+ 
+<b> Secondly </b>:  realised how difficult it is and the fact i have reached my limit based on the criteria (standard )
+i set for my research mission "Intuition first before fall back on resources ". <br>
+
+In the journey of primes i countered conjecturesssssss and theoremssssss 😊
+
+Before i proceed to the conjectures and theorems, how do we test primes? <br>
+
+ <b>Testing primes</b>:
+
+ primes can be tested using either deterministic or probabilistic algorithms . 
+ Probabilistic algorithms are usually used in cryptography applications. <br>
+
+ Some primality testing algorithms / techniques :
+
+ <ul>
+
+    <li>Fermat's test  </li>
+    <li> Trail division</li>
+    <li>Sieve of Eratosthenes </li>
+    <li>Miller-Rabin algorithm ( most pratical algorithm for testing primality widely used in cryptography algorithm) </li>
+
+ </ul>
+
+<h3> conjectures here, theorems there </h3>
+
+Based on my intuition i try to categorize the conjectures and theorems based on some criteria <br>
+
+
+ <h3> Primes are components of other numbers </h3>
+
+   <u> <b> Canonical decomposition</b> : </u> Every positive integer > 1 can be written as a unique product of prime numbers raised to power <br>
+  
+   <u> <b> Chen's theorem</b> : </u> states that every sufficiently large even integer can  be written as a sum of two prime or semiprime <br>
+
+   <u> <b> Goldbach's conjecture</b> : </u> Every integer greater than 2 can be expressed as the sum of two prime numbers <br>
+
+   <u> <b> Lemoines conjecture </b> : </u> Every odd number greater than 5 can be expressed as the sum of a prime and twice a prime <br>
+    n = p + 2q where p and q are prime numbers  <br>
+
+    <u> <b> Vinogradov's theorem</b> : </u> Every sufficiently large odd number is a sum of three primes <br>
+
+
+
+     <h3> Primes in a form ( structure) </h3>
+
+     It is established that every prime > 3  has the form \( 6k \pm 1 \) <br>
+
+      <u> <b> Fermat's prime </b> : </u> Fermat's prime are primes of the  form \( 2^{2n} + 1 \) where n is a positive integer <br>
+
+       <u> <b> Mersenne primes</b> : </u> Mersenne prime has the form   \( 2^p + 1 \) <br>
+
+        <u> <b> Blum prime </b> : </u> Blum prime are prime number such that \( p \equiv 3 \pmod{4} \)  <br>
+
+
+        <h3> In between </h3>
+
+        I categorize this ones as "in between "  beacuse in my perspective the can be categorized as primes in a form ( structure)
+        and also as in the category of distribution of primes  <br>
+
+
+            <u> <b> Twin prime   </b> : </u> twin prime conjecture states there are definetely many primes of the form p + 2 where p is also prime <br>
+
+          <u> <b> polignac's conjecture </b> : </u> For every even number K there  are infinitely many consecutive primes that differ  by k ( kinda generalization  of twin prime conjecture ) <br>
+
+           <u> <b> Sophie gemain primes </b> : </u> There are definetely  many primes of the form p  and 2p + 1 where p is prime  <br> 
+
+
+
+   <u> <b> Dirichlet's theorem </b> : </u> For any two positive co-prime integers a and b there are definitely many primes of the form a + nd <br>
+   
+
+ <h3>Distribution or occurence of primes  </h3>
+
+   
+<u> <b> Legendres conjecture </b> : </u>  There ia always atleast one prime between \( n^2 \) and \( (n + 1)^2 \)
+ <br>
+
+
+<u> <b>Prime number theorem </b> : </u> The function pi(X ) counts the number of primes less than or equal to X, where we have
+the approximation <br>
+
+\( \pi(X) \approx \frac{X}{\log X} \)
+ <br>
+
+ 
+The prime theorem allows us to estimate of the probabilty of a random choosen number to be prime  = \( \frac{1}{\log p} \)
+ <br>
+
+
+
+   <u> <b>Green Tao theorem </b> : </u>  There exist abitarily a long arithemetic progression made up entirely of primes 
+
+(Green-Tao showed that despite primes  having  density of  zero have abitarily long AP's) <br>
+
+<u> <b> Opperman's conjecture</b> : </u>  For every natural number n > 1 there is atleast n^2 and n(n+1)
+
+and n(n+1)  and ( n+1)^2  <br>
+
+
+<u> <b> Betrande's postulate</b> : </u>  For every integer integer  greater than 1 there exist atleast on eprime between k and 2k
+
+ 
+<h3> Prime gaps / gaps between primes </h3>
+
+Gaps between is one of the intresting ones for me. Apart from the gap  between 2 and 3 which is 1 , other prime gaps are even
+
+( Firstly i would enjoin you to look @ the research paper : GAPS BETWEEN PRIMES BY JAMES MARYNARD). it looks very sweet but pls finish it unlike me 😂)
+
+<br>
+
+<u> <b> Andrica's conjecture</b> : </u>  If pn be the nth prime number and gn be the gap between two consecutive
+prime numbers. Andrica's conjecture states \( g_n < 2\sqrt{p_n} + 1 \) or more precisely the original form of the
+conjecture \( \sqrt{p_n + 1} - \sqrt{p_n} < 1 \) <br>
+
+
+<u> <b> Cramer's conjecture </b> : </u> Predicts the gap between consecutive primes grows like \( O((\log p_n)^2) \)
+
+so for a large prime is  pn the next prime  is roughly within \( (\log p_n)^2 \)
+steps <br> 
+
+
+<u> <b> Wolf's conjecture</b> : </u> States the maximum gap between consecutive primes less than n
+
+
+ 
+
+Also note  from the prime gap theorem it can be deduce that the gap between primes on an average is In(X)
+where X is a number. <br> 
+
+
+
+
+
+Now whats the implication of the gap and distribution in cryptography?
+ prime gaps and distribution plays important roles in the feild of cryptography
+
+  
+<h3> Computational cost modelling </h3>
+
+I would try to dipict this using prime number theory <br>
+
+From  Prime number theorem \( \pi(X) \approx \frac{X}{\log X} \) that means density is \( \frac{1}{\log X} \)
+ 
+this means we need an average of log(X) trials before we hit a prime for a number \( \leq X \)
+
+seiving out even numbers   \( 0.5 (\log X) \) (obviously even numbers  cant be prime ) <br>
+
+So kinda for prime generation the system latency = \( \text{number of trials} \times \text{number of CPU cycles} \)
+ <br>
+
+cpu cycles = number of clock or processsor cycle or the time it takes to compute a task by a system <br>
+
+So if one say cycle = frequency <br>
+so therefore cpu cycle time = 1/ cpu cycle
+
+E.g for cpu with 2.5GHz cycle time = \( \frac{1}{2.5 \times 10^9} = 0.4 \text{ nanoseconds} \)
+ <br>
+
+Take T as the average number of trials , take T = 50000
+
+System latency = \( 0.4 \times 5000 = 2000 \, \text{ns} = 2 \, \mu\text{s} \)
+  <br>
+
+why is this important?
+<ul>
+
+<li> Variable latency can lead to timing attacks</li>
+<li>Can help us estimate the cost of key generation without trial and error </li>
+<li> Faster key generation for low latency devices or apps ( e.g client side key generation for an end to end encrypted messaging app and low entropy devices) </li>
+
+
+</ul>
+
+
+<h3> Benchmaarking security assumptions : prime gaps & bias  </h3>
+
+\text{Let } g_n = p_{n+1} - p_n \text{ be the prime gap. Cramér's conjecture states that } g_n \approx O((\log p_n)^2)
+  <br>
+
+Assume random number generator ( RNG ) picks a number uniformly in [ N, 2N] and prime gaps are small, the chance of hitting prime is <br>
+
+\( P_{\text{hit}} = \sum_{k=N}^{2N} \frac{1}{N} P_{\text{hit}} \approx \frac{1}{\log N} \)
+ <br>
+NB: Giving weight 1 to Phit and 0 if it's not prime.
+
+So if prime gaps increase abnormally Phit decreases causing longer  key generation time and biased output distribution <br>
+
+<h3> Modelling failure probabilty : RNG coollision</h3>
+
+Suppose RNG only selects from M different bitstrings <br>
+
+P(M) be the probabilty  two output yeild the same output, if there are  pi(N) primes below N and RNG picks uniformly
+from M possible values 
+
+P_{\text{collision}} = 1 - \exp\left(-\frac{M^2}{2\pi N}\right) <br>
+
+This is the prime bound for prime numbers. If M is too small or primes are reused system could be vulnerable to
+
+<ul>
+
+  <li> Shared modulus attack</li>
+
+   <li> Factoring common prime gaps  </li>
+
+
+</ul>
+
+
+In a nutshell : 
+
+Prime gaps matters because if  large gaps appear in target range prime generation takes longer. E.g In low battery or constrained
+this slows encryption, delays messages or leaks timing patterns which are exploitable for traffic analysis <br>
+
+ <h3>My references </h3>
+
+
+
+A Computational Introduction to Number Theory
+and Algebra by Victor Shoup <br>
+
+New Formulas for Semi-Primes. Testing, Counting and
+Identification of the nth and next Semi-Primes by
+Issam Kaddouraa, Samih Abdul-Nabib, Khadija Al-Akhrassa <br>
+
+GAPS BETWEEN PRIMES by JAMES MAYNARD <br>
+
+Discrete mathematics  with applications by SUSANNA S. EPP <br> 
+
+<a href="https://share.google/UA5MLrjPitmetknCK"> Mathworld  </a>
+
+
+<a href="index.html">← Back to Home</a>
+
+<body>
+    
+</body>
+</html>
